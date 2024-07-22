@@ -181,3 +181,31 @@ footer .footer-right {
 .oyuncu-kategorisi {
     margin-top: 20px;
 }
+
+.magaza {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    overflow-x: auto; /* Yatay kaydırma */
+    white-space: nowrap; /* Tek satır */
+}
+
+.urun-kart {
+    background-color: #ff0000; /* Kırmızı */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block; /* Yatay kaydırma için gerekli */
+    width: 200px; /* Kart genişliği */
+    flex: 0 0 auto; /* Esnek büyüklük ayarı */
+}
+
+.urun-kart img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.urun-kart p {
+    margin: 10px 0 0;
+}
+

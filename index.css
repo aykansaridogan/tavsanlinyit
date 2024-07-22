@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ff0000; /* Kırmızı */
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-left img {
+    height: 50px;
+}
+
+footer .footer-middle {
+    text-align: center;
+}
+
+footer .footer-middle p {
+    margin: 5px 0;
+}
+
+footer .footer-right {
+    text-align: right;
+}
+
+.magaza {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    overflow-x: auto; /* Yatay kaydırma */
+    white-space: nowrap; /* Tek satır */
+}
+
+.urun-kart {
+    background-color: #ff0000; /* Kırmızı */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block; /* Yatay kaydırma için gerekli */
+    width: 200px; /* Kart genişliği */
+    flex: 0 0 auto; /* Esnek büyüklük ayarı */
+}
+
+.urun-kart img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.urun-kart p {
+    margin: 10px 0 0;
+}
