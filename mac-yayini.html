@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maç Yayını - Tavşanlı Linyitspor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Stil ayarları */
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        #video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Tavşanlı Linyitspor Logosu">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="kulubumuz.html">Kulübümüz</a></li>
+                <li><a href="mac-yayini.html">Maç Yayını</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Maç Yayını -->
+    <section id="mac-yayini">
+        <h2>Maç Yayını</h2>
+        <div id="video-container">
+            <!-- YouTube yayını gömme kodu -->
+            <iframe src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <img src="logo.png" alt="Tavşanlı Linyitspor Logosu">
+        </div>
+        <div class="footer-middle">
+            <p><a href="index.html">Ana Sayfa</a></p>
+            <p><a href="kulubumuz.html">Kulübümüz</a></p>
+            <p><a href="mac-yayini.html">Canlı Yayın</a></p>
+            <p><a href="iletisim.html">İletişim</a></p>
+        </div>
+        <div class="footer-right">
+            <p>Tavşanlı Linyitspor Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>

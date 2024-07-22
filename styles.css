@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ff0000; /* Kırmızı */
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider .slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 10s infinite;
+}
+
+.slider .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 33.33% { transform: translateX(0); }
+    66.66%, 100% { transform: translateX(-100%); }
+}
+
+.haberler {
+    margin-top: 20px;
+}
+
+.haberler-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.haber-kart {
+    background-color: #ff0000; /* Kırmızı */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    flex: 0 0 auto;
+}
+
+.haber-kart img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.haber-kart p {
+    margin: 10px 0 0;
+}
+
+.magaza {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.urun-kart {
+    background-color: #ff0000; /* Kırmızı */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.urun-kart img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.urun-kart p {
+    margin: 10px 0 0;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-left img {
+    height: 50px;
+}
+
+footer .footer-middle {
+    text-align: center;
+}
+
+footer .footer-middle p {
+    margin: 5px 0;
+}
+
+footer .footer-right {
+    text-align: right;
+}
+
+.kadro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kadro-kart, .oyuncu-kart {
+    background-color: #ff0000; /* Kırmızı */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+}
+
+.kadro-kart img, .oyuncu-kart img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.kadro-kart p, .oyuncu-kart p {
+    margin: 10px 0 0;
+}
+
+.oyuncu-kategorisi {
+    margin-top: 20px;
+}
