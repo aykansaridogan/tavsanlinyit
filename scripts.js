@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function nextSlide() {
         slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
+        currentSlide = (currentSlide ) % (slides.length-1);
         slides[currentSlide].classList.add('active');
         
         // Slider'ı yavaşça kaydırmak için transform ve transition ayarlama
         const slidesContainer = document.querySelector('.slides');
         slidesContainer.style.transition = 'transform 1s ease-in-out';
-        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        slidesContainer.style.transform = `translateX(-${currentSlide * 20}%)`;
     }
 
     // Geçiş süresini ayarlayın
-    setInterval(nextSlide, 3000); // 3000 ms = 3 saniye
+    setInterval(nextSlide, 150000); // 3000 ms = 3 saniye
 });
